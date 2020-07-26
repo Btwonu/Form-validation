@@ -5,6 +5,11 @@ const password = document.getElementById('user_password');
 const passwordConfirm = document.getElementById('user_password_confirm');
 // const submitBtn = document.getElementById('submit_btn');
 
+//Reset fields
+document.addEventListener('DOMContentLoaded', (event) => {
+  resetFields([username, userMail, password, passwordConfirm]);
+});
+
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   
@@ -79,4 +84,10 @@ function validatePassword(pass) {
   if ( !passReg.test(pass.value.trim()) ) {
     showError(pass, 'The password must contain at least one digit and a capital letter');
   }
+}
+
+function resetFields(fieldsArr) {
+  fieldsArr.forEach(field => {
+    field.value = '';
+  });
 }
