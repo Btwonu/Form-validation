@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="css/modern.min.css">
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Register</h2>
+        <div class="form-control">
+          <label for="user_name">Username</label>
+          <input type="text" id="user_name" name="Username" placeholder="Enter username" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="user_mail">Email</label>
+          <input type="text" id="user_mail" name="Email" placeholder="Enter email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="user_password">Password</label>
+          <input type="password" id="user_password" name="Password" placeholder="Enter password" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="user_password_confirm">Confirm Password</label>
+          <input type="password" id="user_password_confirm" name="Password confirmation" placeholder="Enter password again" />
+          <small>Error message</small>
+        </div>
+        <button id="submit_btn" class="button form-button">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
